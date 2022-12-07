@@ -1,7 +1,24 @@
 <html>
 <head>
-    <title>Z-Axis Test</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Kairos Club 2023 - Test</title>
+
+    <!--
+       _____                       __
+      /     \  __ ______________  |  | __ ___________
+     /  \ /  \|  |  \_  __ \__  \ |  |/ // __ \_  __ \
+    /    Y    \  |  /|  | \// __ \|    <\  ___/|  | \/
+    \____|__  /____/ |__|  (____  /__|_ \\___  >__|
+            \/                  \/     \/    \/
+    www.muraker.com -->
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="theme-color" content="#000000">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <style>
         * {
@@ -131,19 +148,19 @@
                     <img src="https://lh3.googleusercontent.com/pw/AL9nZEUdtZXOBovuRZPpZI1cVgCz7lJ4vpTphfpT-PsRi5NxTT4H-E1cTaP3LQaAykMgkXTsB5G4iUMTOay45oDtzUhy2xmmm1_tZzY6t7pfT52ZnCVlwHu2Hr085r4zF9otzP57evGjTRRKmDgzDFmji70H=w1824-h2430-no?authuser=0">
                 </div>
             </div>
-            <div class="frame" style="-webkit-transform: translateZ(-1000px);-moz-transform: translateZ(-1000px);">
+            <div class="frame" style="-webkit-transform: translateZ(-500px);-moz-transform: translateZ(-500px);">
                 <div class="wraper">
                     <p>2022</p>
                 </div>
-                <div id="instructions">▼</div>
+                <div id="instructions">scroll<br>↓</div>
             </div>
         </div>
     </div>
     <script>
         history.scrollRestoration = 'manual';
         var lastPos = document.body.scrollTop || document.documentElement.scrollTop,
-            perspective = 1000,
-            zSpacing = -1000;
+            perspective = 500,
+            zSpacing = -500;
         zVals = [],
             $frames = $(".frame"),
             frames = $frames.toArray(),
