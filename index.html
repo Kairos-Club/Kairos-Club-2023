@@ -99,8 +99,8 @@
 <body>
 
     <div class="control">
-        <button id="start">PLAY</button>
-        <button id="stop">PAUSE</button>
+        <button id="start">AUTO</button>
+        <button id="stop">MANUAL</button>
         <button value="RESET" onclick="window.location.reload(true)">RESET</button>
     </div>
 
@@ -193,11 +193,6 @@
                     frame.setAttribute("style","-webkit-transform:" + transform + ";-moz-transform:" + transform + ";display:" + display + ";opacity:" + opacity);
             }
         });
-
-        $("html, body").animate({
-            scrollTop: $('html, body').get(0).scrollHeight
-        }, 22000);
-
 
         $( "#start" ).click(function() {
             $("html, body").animate({
