@@ -12,6 +12,10 @@
     <style>
         * {
             box-sizing: border-box;
+            user-select: none;
+        }
+        body, html {
+             
         }
         body {
             height: 22000px;
@@ -50,6 +54,10 @@
             background-color: #FF00FF;
             outline: 10px solid #FF00FF;
             outline-offset: -5px;
+
+            -webkit-transform: translateZ(-2000px);
+            -moz-transform: translateZ(-2000px);
+            transform: translateZ(-2000px);
         }
         .wraper p {
             position: absolute;
@@ -79,91 +87,90 @@
             90% { transform: translateY(-20px); opacity: 1; } 
             100% { transform: translateY(0px); opacity: 0; } 
         }
+
+        .control { 
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 9;
+        }
     </style>
 </head>
 <body>
+
+    <div class="control">
+        <button id="start">PLAY</button>
+        <button id="stop">PAUSE</button>
+        <button value="RESET" onclick="window.location.reload(true)">RESET</button>
+    </div>
+
     <div id="content">
         <div id="viewport">
-            <div class="frame" style="-webkit-transform: translateZ(-2000px);-moz-transform: translateZ(-2000px);">
+            <div class="frame">
                 <div class="wraper">
-                    <p>2023</p>
+                    <img src="content/01-11.jpg">
                 </div>
             </div>
-            <div class="frame" style="-webkit-transform: translateZ(-2000px);-moz-transform: translateZ(-2000px);">
+            <div class="frame">
                 <div class="wraper">
-                    <p>YEAR</p>
+                    <img src="content/01-10.jpg">
                 </div>
             </div>
-            <div class="frame" style="-webkit-transform: translateZ(-2000px);-moz-transform: translateZ(-2000px);">
+            <div class="frame">
                 <div class="wraper">
-                    <p>NEW</p>
+                    <img src="content/01-09.jpg">
                 </div>
             </div>
-            <div class="frame" style="-webkit-transform: translateZ(-2000px);-moz-transform: translateZ(-2000px);">
+            <div class="frame">
                 <div class="wraper">
-                    <p>HAPPY</p>
+                    <img src="content/01-08.jpg">
                 </div>
             </div>
-            <div class="frame" style="-webkit-transform: translateZ(-2000px);-moz-transform: translateZ(-2000px);">
+            <div class="frame">
                 <div class="wraper">
-                    <img src="https://lh3.googleusercontent.com/pw/AL9nZEWvs0i_V3NHcJDIQa61aKSI3W3D_I4EH_C5p3gKlOjv6rd9NGtiit5Kybc1_SRi53PeZReLy_AsNxXiAwxv8xCcwADLPBP7h2rF9DWjprRM1q5mDzMcoqOhb7HwQLJf4VMitSDrC49-2PmpZy_3df1n=w1764-h2350-no?authuser=0">
+                    <img src="content/01-07.jpg">
                 </div>
             </div>
-            <div class="frame" style="-webkit-transform: translateZ(-2000px);-moz-transform: translateZ(-2000px);">
+            <div class="frame">
                 <div class="wraper">
-                    <img src="https://lh3.googleusercontent.com/pw/AL9nZEVFxYnWKO_w4C-fCSwmGLm3h3N146QjADS3HTHeMqUg5IdXLFG80aXfB10x05rAVttGRCsvlW9H_Nj9nZqsxNNYyeEbtKRZNeBaWnxyJUfaJo8ex-uDsCNnBA5FEuH5qirFRGD4j-883xsHV6lmwX0k=w1764-h2350-no?authuser=0">
+                    <img src="content/01-06.jpg">
                 </div>
             </div>
-            <div class="frame" style="-webkit-transform: translateZ(-2000px);-moz-transform: translateZ(-2000px);">
+            <div class="frame">
                 <div class="wraper">
-                    <img src="https://lh3.googleusercontent.com/pw/AL9nZEWze0Zg_9Ga1OgTz403ZCioHRcS1NhL-CrrwB0Kh4pFXM0CTtvW-h70byuQmsUbfhM5T2Xu8AO6fpCMXlBLSHUu_W6H-nk4QtgiMqpVOXnLxxo76ZO3y4omjA4QcsfxxhgG6o_y9e9O4DDKRdxLUyk5=w1766-h994-no?authuser=0">
+                    <img src="content/01-05.jpg">
                 </div>
             </div>
-            <div class="frame" style="-webkit-transform: translateZ(-2000px);-moz-transform: translateZ(-2000px);">
+            <div class="frame">
                 <div class="wraper">
-                    <img src="https://lh3.googleusercontent.com/pw/AL9nZEVYgfhuQo-jYMPwSyzCIQo4iyAIs7LakSZdtgssKAUMso5HeR41U0GUX3TTdiRxYhEZCtYI8dPE9yaqaCsvfQBVTe5y0fgSvSYfsQo9BbWqRqC4T3s-WSFmAdyBtgyh1pbECRiiWrx34mlWtxFkZvds=w1764-h2352-no?authuser=0">
+                    <img src="content/01-04.jpg">
                 </div>
             </div>
-            <div class="frame" style="-webkit-transform: translateZ(-2000px);-moz-transform: translateZ(-2000px);">
+            <div class="frame">
                 <div class="wraper">
-                    <img src="https://lh3.googleusercontent.com/pw/AL9nZEVVLxwunzSsd9sFVqjUFRBs-W4Yw8qgQgWZwcQ2suAgqIY7Ree-bKBj6cHholjKyCghGL0-ceG6UCTZ-_47k-UOzu76vrRIYAPpdIfGysJuSC9Dga0YQCbfEfRaVu1i2miXFJ6qnof1lUwuGQcAaA5U=w480-h640-no?authuser=0">
+                    <img src="content/01-03.jpg">
                 </div>
             </div>
-            <div class="frame" style="-webkit-transform: translateZ(-2000px);-moz-transform: translateZ(-2000px);">
+            <div class="frame">
                 <div class="wraper">
-                    <img src="https://lh3.googleusercontent.com/pw/AL9nZEXGbrqJD-3PjbG-zoO0MWMWtgZW0bfRCblQeWZrrPVLNJUgnvut5fyiKPGtHupPed3ubQGnpJwnXvVtmfxjHt8WrMidhIxMYBj-A5NLgAQ5ZPHCTvt7gSzqUuoe68NPPUSrIULVoUoPAop_0qIfvoiK=w1764-h2070-no?authuser=0">
+                    <img src="content/01-02.jpg">
                 </div>
             </div>
-            <div class="frame" style="-webkit-transform: translateZ(-2000px);-moz-transform: translateZ(-2000px);">
+            <div class="frame">
                 <div class="wraper">
-                    <img src="https://lh3.googleusercontent.com/pw/AL9nZEUAEwi7nBhDP8gL_rdzJzd4_OH-1fK_2J9QhL6XlkYtIlOzfupgv2MZEnKPVDdfLNjwQ9BSaYKylWJ4JMO5GMY3s4DXEei2ppZyo2h-zmqn1MyY_WjuIoRs2oJgW7-D_Kt0P6vlQ5wFnV5s7OicDLhS=w1764-h2352-no?authuser=0">
+                    <img src="content/01-01.jpg">
                 </div>
             </div>
-            <div class="frame" style="-webkit-transform: translateZ(-2000px);-moz-transform: translateZ(-2000px);">
-                <div class="wraper">
-                    <img src="https://lh3.googleusercontent.com/pw/AL9nZEUKDUdgIH6RRXi441Y7EjcZglUSFBQubUKkMGR51JrqceWRL9GgRr_TqbLJP_gNyPJR9TlJnW7i5rfDn99gvq3Af12E9NSOOTfcuwasc0ysjBHypsrLcM6Fu2qDr_esHr7UUv9dNbElLPAYjRxvQbt9=w1764-h1176-no?authuser=0">
-                </div>
-            </div>
-            <div class="frame" style="-webkit-transform: translateZ(-2000px);-moz-transform: translateZ(-2000px);">
-                <div class="wraper">
-                    <img src="https://lh3.googleusercontent.com/pw/AL9nZEV4JMQ8BH3hVQXayFiyH6lIzUbQRtI3LHkXkIb14r8F_VPHa-gpBz73tKNPXf2x62TZNXY1Ewu598Aw1BJcGvss8hunpSZmpVqcMkbJlONSbNzraBPtsIPIcy4A_iwcKeV9kakB2HoMLmNjx2eL-t-M=w1764-h1324-no?authuser=0">
-                </div>
-            </div>
-            <div class="frame" style="-webkit-transform: translateZ(-2000px);-moz-transform: translateZ(-2000px);">
-                <div class="wraper">
-                    <img src="01.png">
-                </div>
-            </div>
-            <div class="frame" style="-webkit-transform: translateZ(-2000px);-moz-transform: translateZ(-2000px);">
+            <div class="frame">
                 <div class="wraper">
                     <p>2022</p>
                 </div>
-                <div id="instructions">▼</div>
             </div>
         </div>
     </div>
     <script>
         history.scrollRestoration = 'manual';
+
         var lastPos = document.body.scrollTop || document.documentElement.scrollTop,
             perspective = 500,
             zSpacing = -2000;
@@ -172,6 +179,7 @@
             frames = $frames.toArray(), 
             numFrames = $frames.length;
         for (var i = 0; i < numFrames; i++) { zVals.push((numFrames - i) * zSpacing); }
+
         $(window).scroll(function (d, e) {
             var top = document.body.scrollTop || document.documentElement.scrollTop,
                 delta = lastPos - top;
@@ -185,6 +193,26 @@
                     frame.setAttribute("style","-webkit-transform:" + transform + ";-moz-transform:" + transform + ";display:" + display + ";opacity:" + opacity);
             }
         });
+
+        $("html, body").animate({
+            scrollTop: $('html, body').get(0).scrollHeight
+        }, 22000);
+
+
+        $( "#start" ).click(function() {
+            $("html, body").animate({
+                scrollTop: $('html, body').get(0).scrollHeight
+            }, 22000);
+        });
+        
+        $( "#stop" ).click(function() {
+            var myDiv = $( "html, body" );
+            myDiv.clearQueue();
+            myDiv.stop();
+        });
+
+
+
     </script>
 </body>
 </html>
