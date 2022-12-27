@@ -6,7 +6,7 @@
     <title>Kairos Club 2023 - Test</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-    <meta name="theme-color" content="#FF00FF">
+    <meta name="theme-color" content="black">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <style>
@@ -18,9 +18,9 @@
              
         }
         body {
-            height: 22000px;
+            height: 25000px;
             color: white;
-            background-color: #FF00FF;
+            background-color: black;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
         #content {
@@ -51,8 +51,8 @@
             width: 100vw;
             height: 100vh;
             transform-style: preserve-3d;
-            background-color: #FF00FF;
-            outline: 10px solid #FF00FF;
+            background-color: black;
+            outline: 10px solid black;
             outline-offset: -5px;
 
             -webkit-transform: translateZ(-2000px);
@@ -108,57 +108,87 @@
         <div id="viewport">
             <div class="frame">
                 <div class="wraper">
-                    <img src="content/01-11.jpg">
+                    <img src="content/20.jpg">
                 </div>
             </div>
             <div class="frame">
                 <div class="wraper">
-                    <img src="content/01-10.jpg">
+                    <img src="content/19.jpg">
                 </div>
             </div>
             <div class="frame">
                 <div class="wraper">
-                    <img src="content/01-09.jpg">
+                    <img src="content/18.jpg">
                 </div>
             </div>
             <div class="frame">
                 <div class="wraper">
-                    <img src="content/01-08.jpg">
+                    <p>février</p>
                 </div>
             </div>
             <div class="frame">
                 <div class="wraper">
-                    <img src="content/01-07.jpg">
+                    <img src="content/15.jpg">
                 </div>
             </div>
             <div class="frame">
                 <div class="wraper">
-                    <img src="content/01-06.jpg">
+                    <img src="content/14.jpg">
                 </div>
             </div>
             <div class="frame">
                 <div class="wraper">
-                    <img src="content/01-05.jpg">
+                    <img src="content/13.jpg">
                 </div>
             </div>
             <div class="frame">
                 <div class="wraper">
-                    <img src="content/01-04.jpg">
+                    <img src="content/12.jpg">
                 </div>
             </div>
             <div class="frame">
                 <div class="wraper">
-                    <img src="content/01-03.jpg">
+                    <img src="content/11.jpg">
                 </div>
             </div>
             <div class="frame">
                 <div class="wraper">
-                    <img src="content/01-02.jpg">
+                    <img src="content/10.jpg">
                 </div>
             </div>
             <div class="frame">
                 <div class="wraper">
-                    <img src="content/01-01.jpg">
+                    <img src="content/9.jpg">
+                </div>
+            </div>
+            <div class="frame">
+                <div class="wraper">
+                    <img src="content/8.jpg">
+                </div>
+            </div>
+            <div class="frame">
+                <div class="wraper">
+                    <img src="content/7.jpg">
+                </div>
+            </div>
+            <div class="frame">
+                <div class="wraper">
+                    <img src="content/6.jpg">
+                </div>
+            </div>
+            <div class="frame">
+                <div class="wraper">
+                    <img src="content/5.jpg">
+                </div>
+            </div>
+            <div class="frame">
+                <div class="wraper">
+                    <img src="content/4.jpg">
+                </div>
+            </div>
+            <div class="frame">
+                <div class="wraper">
+                    <p>janvier</p>
                 </div>
             </div>
             <div class="frame">
@@ -197,7 +227,7 @@
         $( "#start" ).click(function() {
             $("html, body").animate({
                 scrollTop: $('html, body').get(0).scrollHeight
-            }, 22000);
+            }, 25000, 'linear');
         });
         
         $( "#stop" ).click(function() {
