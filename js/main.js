@@ -26,7 +26,7 @@ $(window).scroll(function (d, e) {
 $( "#start" ).click(function() {
     $("html, body").animate({
         scrollTop: $('html, body').get(0).scrollHeight
-    }, 150000, 'linear');
+    }, 100000, 'linear');
     $("#stop").show();
     $("#start").hide();
 });
