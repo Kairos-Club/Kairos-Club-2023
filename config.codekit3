@@ -2955,6 +2955,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/content\/300.jpg" : {
+      "ft" : 16384,
+      "iS" : 818525,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/content\/300.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/css\/main.css" : {
       "aP" : 1,
       "bl" : 0,

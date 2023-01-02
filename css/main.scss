@@ -1,5 +1,6 @@
 
-@import url(https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap);
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 html {
     min-height: 100vh;
     cursor:default
@@ -28,26 +29,55 @@ body, html {
     text-align: center;
 }
 
+body {
+    margin-top: 40px;
+}
+
 .content-text,
 .content-image {
 
     padding: 20px 20px 0 20px;
-
     text-align: center;
     
+}
+
+.content-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 40px);
 }
 
 .content-text .wrap {
 
     width: calc(100vw - 40px);
-    min-height: calc(50vh - 20px);
+    
 
     overflow: hidden;
 
+    p {
+        width: 100%;
+    }
+}
+
+.intro {
+    font-size: 50%;
+    line-height: 120%;
+
+    p {
+        max-width: 590px;
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: left;
+    }
+}
+
+.content-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    min-height: 100vh;
 }
 
 img {
@@ -60,7 +90,8 @@ img {
 }
 
 
-
+#fr-toggle,
+.en-content,
 #stop {
     display: none;
 }
@@ -80,6 +111,16 @@ img {
     text-align: right;
 }
 
+button:disabled {
+    color: #000;
+    background-color: #fff;
+    cursor:pointer;
+}
+
+button:disabled:hover {
+    cursor: default;
+}
+
 button {
     font: inherit;
     border-radius: 5px;
@@ -89,6 +130,7 @@ button {
     text-align: center;
     white-space: nowrap;
     width: auto;
+    min-width: 60px;
     max-width: inherit;
     box-shadow: none;
     appearance: none;

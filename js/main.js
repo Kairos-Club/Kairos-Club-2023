@@ -1,11 +1,38 @@
 history.scrollRestoration = 'manual';
 
+$( "#en-toggle" ).click(function() {
+
+    $(".en-content").show();
+    $(".fr-content").hide();
+    
+
+    $("#fr-toggle").show();
+    $("#en-toggle").hide();
+});
+
+$( "#fr-toggle" ).click(function() {
+
+    $(".fr-content").show();
+    $(".en-content").hide();
+    
+    
+    $("#en-toggle").show();
+    $("#fr-toggle").hide();
+});
+
 
 
 $( "#start" ).click(function() {
     $("html, body").animate({
         scrollTop: $('html, body').get(0).scrollHeight
-    }, 100000, 'linear');
+    }, 400000, 'linear');
+
+    window.scrollBy({
+        top: 0,
+        left: 270,
+        behavior: 'smooth'
+    });
+
     $("#stop").show();
     $("#start").hide();
     $("body").css("overflow", "hidden");
