@@ -1,5 +1,30 @@
 history.scrollRestoration = 'manual';
 
+
+
+$( "#start" ).click(function() {
+    $("html, body").animate({
+        scrollTop: $('html, body').get(0).scrollHeight
+    }, 100000, 'linear');
+    $("#stop").show();
+    $("#start").hide();
+    $("body").css("overflow", "hidden");
+
+    
+});
+
+$( "#stop" ).click(function() {
+    var myDiv = $( "html, body" );
+    myDiv.clearQueue();
+    myDiv.stop();
+    $("#stop").hide();
+    $("#start").show();
+    $("body").css("overflow", "auto");
+});
+
+
+
+//
 var lastPos = document.body.scrollTop || document.documentElement.scrollTop,
     perspective = 500,
     zSpacing = -2000;
@@ -21,20 +46,4 @@ $(window).scroll(function (d, e) {
             display = newZVal > perspective ? "none" : "block";
             frame.setAttribute("style","-webkit-transform:" + transform + ";-moz-transform:" + transform + ";display:" + display + ";opacity:" + opacity);
     }
-});
-
-$( "#start" ).click(function() {
-    $("html, body").animate({
-        scrollTop: $('html, body').get(0).scrollHeight
-    }, 100000, 'linear');
-    $("#stop").show();
-    $("#start").hide();
-});
-
-$( "#stop" ).click(function() {
-    var myDiv = $( "html, body" );
-    myDiv.clearQueue();
-    myDiv.stop();
-    $("#stop").hide();
-    $("#start").show();
 });
